@@ -1,0 +1,243 @@
+<!DOCTYPE html> <!-- Declara que o documento é HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<head>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Garante que a página seja responsiva -->
+  <title>IDECOM</title> <!-- Título da aba do navegador -->
+
+  <!-- Importa os ícones do Google (Material Icons) -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Link para o CSS local -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome para ícones (WhatsApp, Instagram, etc.) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- JavaScript local que será executado depois que o HTML for carregado -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container"> <!-- Container do cabeçalho -->
+
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#home"><img  src="imagem/LOGO NOVA - OFICIAL.png" alt="Nome da Empresa" /></a>  
+      </div>
+
+      <!-- Botão hambúrguer (visível só no mobile) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Menu de navegação -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#som">Sobre nós</a></li>
+          <li><a href="#carrossel-vai">Serviços</a></li>
+          <li><a href="#Vantagens">Vantagens </a></li>
+        </ul>
+      </nav>
+
+      <!-- Ícones à direita -->
+      <div class="header-icons" style="font-size: 28px;">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/554791915340" target="_blank" >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Localização (Google Maps) -->
+        <a href="https://maps.app.goo.gl/BwjyVLZmk9CN7SddA" target="_blank" >
+          <i class="fas fa-map-marker-alt"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/idecom_?igsh=ZG1tOW14ZjlnajZt" >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="content"> <!-- Início do conteúdo principal -->
+    <section id="home"> <!-- Seção inicial -->
+      <div id="cta">
+        <h1 class="title">
+          Quer ser visto por milhares de pessoas todos os dias?
+        </h1>
+
+        <p id="som" class="description">
+          Personalize sua frota e transforme seus veículos em propaganda de alto impacto!
+        </p>
+      </div>
+    </section>
+
+    <section > <!-- Seção Sobre Nós -->
+      <diV class="text">
+        <span  class="text_formatacao1">
+          Sobre nós
+        </span>
+        <h5 class="text_formatacao2">
+          Com mais de 20 anos de experiência no mercado, somos uma empresa consolidada no segmento de personalização de frotas em Jaraguá do Sul (SC), atuando com comprometimento, excelência e resultados visuais de alto impacto.
+          Nosso foco é entregar um serviço de qualidade para cada cliente, seja na criação do layout, na aplicação de adesivos ou na pintura profissional de baús e carrocerias. Trabalhamos para que cada veículo se torne uma extensão da marca do cliente, reforçando sua presença nas ruas e estradas com estilo, organização e credibilidade.
+          Aqui, não entregamos apenas estética: entregamos valor, identidade e confiança.
+        </h5>
+      </diV>
+    </section>
+
+    <div class="carrossel-wrapper" id="carrossel-vai"> <!-- Carrossel de serviços -->
+      <button class="seta esquerda" onclick="moverSlide(-1)">‹</button>
+
+      <div class="carrossel-container" id="carrossel">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <div class="imagem" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagem/slide1.jpg'); "></div>
+          <div class="conteudo">
+            <h2>Pintura</h2>
+            <p>Pintura profissional em baús e carrocerias (carga seca, frigorífica e siders).</p>
+            <a href="https://wa.me/554792838653" target="_blank">Descubra mais</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <div class="imagem" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagem/slide2.jpg');"></div>
+          <div class="conteudo">
+            <h2>Adesivação</h2>
+            <p>Aplicação de adesivos e envelopamentos com materiais de alta durabilidade.</p>
+            <a href="https://wa.me/554791915340">Descubra mais</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+          <div class="imagem" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagem/slide3.jpg');"></div>
+          <div class="conteudo">
+            <h2>Consultoria visual</h2>
+            <p>Consultoria visual e padronização de identidade para grandes frotas.</p>
+            <a href="https://wa.me/554792838653" target="_blank">Descubra mais</a>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+          <div class="imagem" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagem/slide4.jpg');"></div>
+          <div class="conteudo">
+            <h2>Remoção</h2>
+            <p>Remoção de adesivos ou pinturas antigas e revitalização da frota.</p>
+            <a href="https://wa.me/554791915340" target="_blank">Descubra mais</a>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+          <div class="imagem" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imagem/slide5.jpg');"></div>
+          <div class="conteudo">
+            <h2>Criação de layouts</h2>
+            <p>Criação e desenvolvimento de layouts personalizados para a sua frota.</p>
+            <a href="https://wa.me/554792838653" target="_blank">Descubra mais</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="seta direita" onclick="moverSlide(1)">›</button>
+    </div>
+
+    <section class="faq-container"> <!-- Seção de Perguntas Frequentes -->
+      <h1>FAQ</h1>
+      <div class="left">
+        <div class="faq-item">
+          <h2>Quanto tempo leva para personalizar um baú ou caminhão?</h2>
+          <p>O prazo pode variar conforme o serviço (pintura, adesivagem ou ambos), mas em média a personalização completa leva de 3 a 5 dias úteis. Sempre informamos o prazo exato no momento do orçamento.</p>
+        </div>
+
+        <div class="faq-item">
+          <h2>Vocês criam o layout ou preciso enviar pronto?</h2>
+          <p>Nossa equipe de design cria o layout personalizado para cada cliente, sem custo adicional. Você pode enviar sua ideia ou deixar que a gente desenvolva algo 100% do zero.</p>
+        </div>
+
+        <div class="faq-item">
+          <h2>A empresa atende apenas frotas grandes?</h2>
+          <p>Não! Atendemos desde empresas com apenas 1 veículo até grandes frotas. Cada projeto é importante pra gente, independente do tamanho.</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="faq-item">
+          <h2>Vocês fazem apenas adesivagem ou também trabalham com pintura?</h2>
+          <p>Sim, fazemos os dois! Trabalhamos com adesivagem de alta qualidade e também com pintura profissional em baús, carrocerias carga seca, frigorífica e siders.</p>
+        </div>
+
+        <div class="faq-item">
+          <h2>Os materiais utilizados são resistentes ao tempo e lavagem?</h2>
+          <p>Sim! Usamos materiais de alta durabilidade, resistentes à chuva, sol, poeira e lavagens. Nossos adesivos e tintas são pensados para o uso intenso nas estradas.</p>
+        </div>
+
+        <div class="faq-item">
+          <h2>Como faço para solicitar um orçamento?</h2>
+          <p>É simples: clique no botão de WhatsApp no site ou Instagram, nos envie fotos do veículo e informações básicas (tipo de serviço desejado e localização), que retornamos rapidinho com o orçamento.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="product-grid" id="Vantagens"> <!-- Seção de Vantagens em cards -->
+      <div class="card">
+        <img src="imagem/imagem1.jpg" alt="Loudspeakers" />
+        <div class="card-content">
+          <h3>Qualidade acima da média</h3>
+          <p>Trabalhamos apenas com os melhores materiais do mercado, garantindo durabilidade, acabamento impecável e um resultado que valoriza a sua frota</p>
+          <a href="https://wa.me/554791915340">Descubra mais&gt;</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="imagem/imagem2.jpg" alt="Wireless Speakers" />
+        <div class="card-content">
+          <h3>Preços competitivos</h3>
+          <p>Oferecemos excelente custo-benefício, entregando alto padrão de serviço com valores acessíveis,porque acreditamos que qualidade e preço justo podem andar juntos.</p>
+          <a href="https://wa.me/554792838653">Descubra mais&gt;</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="imagem/imagem3.jpg" alt="Headphones" />
+        <div class="card-content">
+          <h3> Profissionais experientes</h3>
+          <p>Nossa equipe é formada por especialistas com décadas de experiência no segmento de personalização de frotas. Isso garante segurança, agilidade e excelência em cada detalhe do processo.</p>
+          <a href="https://wa.me/554791915340">Descubra mais&gt;</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="imagem/imagem4.jpg" alt="Sound Bars" />
+        <div class="card-content">
+          <h3>Atendimento personalizado</h3>
+          <p>Cada projeto é único. Aqui, você recebe atenção total desde o primeiro contato, com soluções pensadas sob medida para as necessidades da sua empresa.</p>
+          <a href="https://wa.me/554792838653">Descubra mais&gt;</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="main-footer"> <!-- Rodapé do site -->
+      <div class="footer-content">
+        <img class="footer-logo" src="imagem/IMG_0189.PNG" alt="Logo Idecom">
+        <p class="subtitle">Entre em contato e fale conosco agora mesmo</p>
+
+        <div class="footer-links">
+          <a href="https://wa.me/554791915340">WhatsApp</a>
+          <a href="https://www.instagram.com/idecom_?igsh=ZG1tOW14ZjlnajZt">Instagram</a>
+          <a href="https://maps.app.goo.gl/BwjyVLZmk9CN7SddA">Localização</a>
+        </div>
+
+        <p class="copyright">
+          &copy; Desenvolvimento por Idecom - © 2025 Idecom - Todos os direitos reservados
+        </p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
